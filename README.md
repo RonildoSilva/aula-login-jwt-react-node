@@ -1,6 +1,20 @@
+# Sistema de login com React e Node.js (JWT)
 
+> Aplicação didática com autenticação JWT: API Express com rotas protegidas por middleware e cliente React/Vite com login, perfil e dashboard.
 
-# Tema da Avaliação
+![status](https://img.shields.io/badge/status-concluído-success) ![node](https://img.shields.io/badge/Node.js-Express-green) ![react](https://img.shields.io/badge/React-19-blue) ![jwt](https://img.shields.io/badge/JWT-jsonwebtoken-orange)
+
+Material preparado em janeiro de 2026 para uma aula-teste de processo seletivo docente. O backend expõe `POST /signin`, `GET /me` (protegida) e `GET /dash`; o frontend guarda o token em `localStorage` e alterna entre as telas conforme a autenticação.
+
+## Estrutura de pastas
+```text
+backend/src/index.js        rotas e geração do token
+backend/src/middleware.js   authorizeToken (Bearer)
+backend/src/users.js        usuários em memória
+frontend/src/               App, Login, Profile, Dash
+```
+
+## Tema da avaliação
 
 **Tema de aula teste:**
 
@@ -82,3 +96,9 @@ npm run dev
 ```
 
 O frontend estará disponível em `http://localhost:5173` (padrão Vite).
+
+## Status
+Concluído (material de aula).
+
+## Autor
+Ronildo Silva · ronildo.comp@gmail.com
