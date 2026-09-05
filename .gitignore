@@ -48,3 +48,10 @@ backend/dist/
 # Ignore local environment files
 backend/.env
 frontend/.env
+# Sistema / editores
+desktop.ini
+*.swo
+*~
+.~lock*#
+# Node
+dist/
